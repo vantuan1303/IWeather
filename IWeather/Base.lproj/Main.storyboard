@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lost Angeless" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTs-vH-Hfc">
+                                <rect key="frame" x="114" y="254" width="187" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCV-pM-0Ti">
+                                <rect key="frame" x="182" y="336" width="51" height="44"/>
+                                <state key="normal" image="refresh"/>
+                                <connections>
+                                    <action selector="btn_refresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvO-na-olW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgR-b1-5ye">
+                                <rect key="frame" x="44" y="486" width="326" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="326" id="CK6-zh-hr7"/>
+                                    <constraint firstAttribute="height" constant="107" id="DZl-AX-hpk"/>
+                                </constraints>
+                                <string key="text">Nothing in life is to be feared, it’s to be understood. Now is the time to understand more, so that we may fear less – Marie Curie</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="10"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2b-yO-xyx">
+                                <rect key="frame" x="73" y="143" width="160" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="89"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-Rv-L7d">
+                                <rect key="frame" x="241" y="154" width="34" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vh-Eg-KMH">
+                                <rect key="frame" x="278" y="138" width="62" height="119"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="89"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="acc_CF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DxM-jq-1Qk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blood.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nig-pV-fLT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FCV-pM-0Ti" firstAttribute="top" secondItem="TaZ-Rv-L7d" secondAttribute="bottom" constant="128" id="0KC-N3-bbk"/>
+                            <constraint firstItem="FCV-pM-0Ti" firstAttribute="top" secondItem="VTs-vH-Hfc" secondAttribute="bottom" constant="45" id="1xe-TA-dhh"/>
+                            <constraint firstItem="FCV-pM-0Ti" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4fu-nA-6Jc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nig-pV-fLT" secondAttribute="bottom" id="EEj-gs-crc"/>
+                            <constraint firstItem="TaZ-Rv-L7d" firstAttribute="leading" secondItem="FCV-pM-0Ti" secondAttribute="trailing" constant="8" id="Gqz-mD-7cP"/>
+                            <constraint firstItem="VTs-vH-Hfc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OIP-bP-f9W"/>
+                            <constraint firstItem="FCV-pM-0Ti" firstAttribute="top" secondItem="5Vh-Eg-KMH" secondAttribute="bottom" constant="79" id="OKk-bB-bO9"/>
+                            <constraint firstItem="FCV-pM-0Ti" firstAttribute="top" secondItem="Y2b-yO-xyx" secondAttribute="bottom" constant="85" id="ZJ3-BW-cwm"/>
+                            <constraint firstItem="IgR-b1-5ye" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="adh-Gi-gij"/>
+                            <constraint firstItem="5Vh-Eg-KMH" firstAttribute="leading" secondItem="FCV-pM-0Ti" secondAttribute="trailing" constant="45" id="gSK-HZ-XVn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IgR-b1-5ye" secondAttribute="trailing" constant="24" id="mmE-Jv-YmI"/>
+                            <constraint firstItem="FCV-pM-0Ti" firstAttribute="leading" secondItem="Y2b-yO-xyx" secondAttribute="trailing" constant="-51" id="oOG-ym-BkX"/>
+                            <constraint firstItem="IgR-b1-5ye" firstAttribute="top" secondItem="FCV-pM-0Ti" secondAttribute="bottom" constant="106" id="ol5-SN-Oug"/>
+                            <constraint firstItem="FCV-pM-0Ti" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-10" id="rZ2-r5-8i2"/>
+                            <constraint firstItem="Nig-pV-fLT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="yd2-Bd-sCK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nig-pV-fLT" secondAttribute="trailing" constant="-20" id="ysN-mW-3Qm"/>
+                            <constraint firstItem="Nig-pV-fLT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="zn3-lJ-gLg"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="btn_CF" destination="5Vh-Eg-KMH" id="6ZN-Em-8DA"/>
+                        <outlet property="lbl_city" destination="VTs-vH-Hfc" id="lZ9-uH-hUV"/>
+                        <outlet property="lbl_degree" destination="Y2b-yO-xyx" id="Bmr-tv-i4i"/>
+                        <outlet property="lbl_message" destination="IgR-b1-5ye" id="vNa-XQ-Nd5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blood.png" width="750" height="1334"/>
+        <image name="refresh" width="51" height="44"/>
+    </resources>
+</document>
